@@ -8,7 +8,7 @@ Config.PickaxeItemName = 'pickaxe' -- The item name required to start mining
 Config.BreakPickaxe = false -- If using ox_inventory v.2.31.0 or later, keep this set to false and it will use "decay" feature instead. Otherwise, recommended to set to true
 Config.BreakChance = 10 -- What percentage chance should a pickaxe have to break
 Config.Anticheat = true -- Display a skillcheck at random intervals to deter autoclicking (True to enabled, false to disable)
-Config.AnticheatChance = 20 -- What percentage chance should a player be hit with the anticheat while mining? (10 = 10% chance)
+Config.AnticheatChance = 100 -- What percentage chance should a player be hit with the anticheat while mining? (10 = 10% chance)
 
 Config.Selling = {
     enabled = true, -- Do you want to enable selling materials? (True if yes, false if no)
@@ -123,7 +123,7 @@ Config.SmeltingLocation = vec3(1086.3845, -2003.6810, 30.9738)
 
 -- All the locations at which a player can start mining
 Config.MiningLocations = {
-    vec3(2956.2656, 2852.0479, 48.3220),
+    vec3(2952.3447, 2852.9858, 49.1865),
     vec3(2972.1936, 2842.1506, 46.3243),
     vec3(2980.8755, 2824.4500, 45.9470),
     vec3(3001.8000, 2791.0654, 44.8597),
@@ -134,22 +134,22 @@ Config.MiningLocations = {
 -- The blip settings for each type of blip
 Config.BlipSettings = {
     mineSettings = {
-        blipName = 'Mining', -- The label to display on the map for this location
+        blipName = 'Mining area', -- The label to display on the map for this location
         blipSprite = 618, -- https://docs.fivem.net/docs/game-references/blips/
         blipColor = 5, -- https://docs.fivem.net/docs/game-references/blips/#blip-colors
-        blipScale = 0.75 -- Ranges from 0.01 to 1.0
+        blipScale = 0.45 -- Ranges from 0.01 to 1.0
     },
     smeltSettings = {
         blipName = 'Smelting',
         blipSprite = 648,
         blipColor = 17,
-        blipScale = 0.80
+        blipScale = 0.65
     },
     sellSettings = {
         blipName = 'Sell Materials',
         blipSprite = 207,
         blipColor = 2, 
-        blipScale = 0.80
+        blipScale = 0.65
     }
 }
 
